@@ -65,7 +65,11 @@
       <section class="hero section">
         <div class="container">
           <h1 class="title-first">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn button button-active">
+          <button
+            type="button"
+            class="hero-btn button button-active"
+            data-modal-open
+          >
             Замовити послугу
           </button>
         </div>
@@ -147,31 +151,46 @@
           <h2 class="prezents-title">Чим ми займаємося</h2>
           <ul class="prezents-list list">
             <li class="prezents-list-item">
-              <img
-                class="portfolio-list-img"
-                src="./images/about-1.jpg"
-                alt="веб технології"
-                width="370"
-                height="294"
-              />
+              <div class="position-prezents">
+                <img
+                  class="portfolio-list-img"
+                  src="./images/about-1.jpg"
+                  alt="веб технології"
+                  width="370"
+                  height="294"
+                />
+                <div class="prezents-title-text">
+                  <p>Десктопні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="prezents-list-item">
-              <img
-                class="prezents-list-img"
-                src="./images/about-2.jpg"
-                alt="адаптація для мобільних пристроїв"
-                width="370"
-                height="294"
-              />
+              <div class="position-prezents">
+                <img
+                  class="prezents-list-img"
+                  src="./images/about-2.jpg"
+                  alt="адаптація для мобільних пристроїв"
+                  width="370"
+                  height="294"
+                />
+                <div class="prezents-title-text">
+                  <p>Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="prezents-list-item">
-              <img
-                class="prezents-list-img"
-                src="./images/about-3.jpg"
-                alt="спільне середовище пк та мобільних пристроїв"
-                width="370"
-                height="294"
-              />
+              <div class="position-prezents">
+                <img
+                  class="prezents-list-img"
+                  src="./images/about-3.jpg"
+                  alt="спільне середовище пк та мобільних пристроїв"
+                  width="370"
+                  height="294"
+                />
+                <div class="prezents-title-text">
+                  <p>Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -597,5 +616,21 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button
+          type="button"
+          class="btn-close-modal"
+          data-modal-close
+          width="30px"
+          height="30px"
+        >
+          <svg class="modal-close-icon" width="18px" height="18px">
+            <use href="./images/sprite.svg#modal-close-btn"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
