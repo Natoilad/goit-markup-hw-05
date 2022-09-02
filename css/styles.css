@@ -147,6 +147,7 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--transition-dur-fun);
+  position: relative;
 }
 
 .list-contact-link {
@@ -175,6 +176,18 @@ body {
 .header-contact-mail {
   margin-right: 10px;
   fill: currentColor;
+}
+
+.link-active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  left: 0;
+  bottom: -1px;
+  background-color: var(--brend-color);
+  border-radius: 2px;
 }
 
 /* hero */
@@ -649,6 +662,8 @@ body {
   height: 100%;
   z-index: 999;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity var(--transition-dur-fun),
+    visibility var(--transition-dur-fun);
 }
 
 .modal {
