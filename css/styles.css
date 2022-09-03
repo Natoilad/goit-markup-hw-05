@@ -513,7 +513,7 @@ body {
   letter-spacing: 0.03em;
   color: #212121;
   transition: background-color var(--transition-dur-fun),
-    color var(--transition-dur-fun);
+    color var(--transition-dur-fun), box-shadow var(--transition-dur-fun);
 }
 
 .project-list {
